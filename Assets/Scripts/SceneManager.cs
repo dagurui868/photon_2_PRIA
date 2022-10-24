@@ -20,7 +20,7 @@ public class SceneManager : MonoBehaviour
         else 
         {
 
-            PhotonNetwork.Instantiate("Player2", positionTwo.position, positionOne.rotation);
+            PhotonNetwork.Instantiate("Player2", positionTwo.position, positionTwo.rotation);
         }
     }
 

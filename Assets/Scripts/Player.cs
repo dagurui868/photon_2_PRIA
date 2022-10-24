@@ -7,7 +7,12 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed;
     public float rotationSpeed;
+    void start{
 
+        if (!GetComponent<PhotonView>().IsMine)
+            Destroy(GetComponentInChildren<Camera>()) // Si no es el propio  componente destruye la camara.
+
+    }
 
     // Update is called once per frame
     void Update()
